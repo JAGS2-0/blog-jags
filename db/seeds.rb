@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-# 5.times do
-#   Blog.create(title: Faker::Book.title, post: Faker::Hipster.paragraph)
-# end
-
-3.times do
-  Author.create(name: Faker::Name.name, email: Faker::Internet.email, bio: Faker::Hipster.paragraph)
+2.times do
+  Blog.create(title: Faker::Book.title, post: Faker::Hipster.paragraph, author_id: 4)
 end
+
+# 3.times do
+#   Author.create(name: Faker::Name.name, email: Faker::Internet.email, bio: Faker::Hipster.paragraph)
+# end
