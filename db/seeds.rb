@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-2.times do
-  Blog.create(title: Faker::Book.title, post: Faker::Hipster.paragraph, author_id: 4)
+5.times do
+  Comment.create(title: Faker::Book.title, post: Faker::Hipster.paragraph)
 end
 
 # 3.times do
