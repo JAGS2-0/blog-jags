@@ -1,0 +1,19 @@
+<h1>Welcome Authors!</h1>
+
+<p>
+  <% if current_author != nil %>
+      You are <%= current_author.email %>
+
+      You have <%=current_author.blogs.count %> blog posts.
+
+
+
+      <%= form_tag "/authors/sign_out", method: :delete do %>
+          <button>Sign Out</button>
+      <% end %>
+
+  <% else %>
+      <p>You are not logged in</p>
+      <a href="/authors/sign_in">Log in!</a>
+  <% end %>
+  </p>
