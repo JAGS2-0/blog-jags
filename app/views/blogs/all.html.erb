@@ -1,8 +1,11 @@
 <h1>All Blog Posts</h1>
 
+<a href="/"><p>Back to Main Page</p></a>
+
 <table>
   <thead>
     <th>Created</th>
+    <th>Author</th>
     <th>Title</th>
     <th>Post</th>
   </thead>
@@ -14,7 +17,14 @@
           <%= post.created_at%>
         </td>
         <td>
-          <%= post.title%>
+          <% if post.author %>
+          <%= post.author.name %>
+              <% else %>
+          <p>No Author Listed</p>
+              <% end %>
+        </td>
+        <td>
+          <a href="/blogs/<%= post.id %>"><%= post.title%></a>
         </td>
         <td><%= post.post %></td>
       </tr>

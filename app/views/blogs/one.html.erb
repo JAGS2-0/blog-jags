@@ -1,0 +1,14 @@
+<a href="/blogs/all"><p>Back to All Blogs</p></a>
+
+<h1><%= @post.title %></h1>
+
+<% if @post.author %>
+  <h2><%= @post.author.name %></h2>
+    <% else %>
+    <h2>No Author Listed</h2>
+<% end %>
+
+<h3><%= @post.created_at %></h3>
+
+<p><%= @post.post %></p>
+

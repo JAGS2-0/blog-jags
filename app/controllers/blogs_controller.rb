@@ -14,4 +14,8 @@ class BlogsController < ApplicationController
     @blog_posts = Blog.all
   end
 
+  def one
+    @post = Blog.find params[:id]
+  end
+
 end
