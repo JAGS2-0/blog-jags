@@ -1,6 +1,6 @@
 class Blog < ActiveRecord::Base
 
-  belongs_to :author
+  belongs_to :authors
 
   has_many :comments
 

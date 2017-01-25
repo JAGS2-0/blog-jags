@@ -3,11 +3,14 @@ Rails.application.routes.draw do
 
   # get '/blogs/new' => 'blogs#new'
 
+    get '/' => 'authors#new'
+
+    # Authors
     get '/authors/welcome' => 'authors#new'
 
+    # Blogs & Posts
     get '/blogs/post' => 'blogs#new'
-
-    post 'blogs' => 'blogs#create'
+    post '/blogs' => 'blogs#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
