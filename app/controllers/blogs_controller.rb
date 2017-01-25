@@ -10,4 +10,8 @@ class BlogsController < ApplicationController
     redirect_to '/'
   end
 
+  def all
+    @blog_posts = Blog.all
+  end
+
 end

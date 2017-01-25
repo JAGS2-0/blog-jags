@@ -1,0 +1,28 @@
+<h1>All Blog Posts</h1>
+
+<table>
+  <thead>
+    <th>Created</th>
+    <th>Title</th>
+    <th>Post</th>
+  </thead>
+
+  <tbody>
+  <% @blog_posts.each do |post| %>
+      <tr>
+        <td>
+          <%= post.created_at%>
+        </td>
+        <td>
+          <%= post.title%>
+        </td>
+        <td><%= post.post %></td>
+      </tr>
+  <% end %>
+
+  </tbody>
+
+</table>
+
+
+
