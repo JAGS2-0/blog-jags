@@ -18,4 +18,12 @@ class BlogsController < ApplicationController
     @post = Blog.find params[:id]
   end
 
+  # def favorite
+  #
+  # end
+  #
+  # def unfavorite
+  #
+  # end
+
 end
